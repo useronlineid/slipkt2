@@ -110,7 +110,7 @@ function updateDisplay() {
             ctx.drawImage(bankLogo, 28.2, 610.7, 110, 110); // Adjust position and size as needed
             
             // Draw text with custom styles
-            drawText(ctx, `${formattedDate} - ${formattedTime}`, 26.0, 1045.0, '37.50px DX-Krungthai', '#000000', '500', 'right', 1.5, 3, 0, 0, 500, -1.5);
+            drawText(ctx, `${formattedDate} - ${formattedTime}`, 26.0, 1045.0, '37.50px DX-Krungthai', '#000000', '500', 'right', 1.5, 3, 0, 0, 800, -1.5);
 
             drawText(ctx, `${transactionid}`, 315.7, 320.5, '31.5px DX-Krungthai', '#586970', '500', 'left', 1.5, 1, 0, 0, 500, -0.5);
             
@@ -119,7 +119,7 @@ function updateDisplay() {
             drawText(ctx, `กรุงไทย`, 168.0, 514.6, '31.35px DX-Krungthai', '#000000', '700', 'left', 1.5, 2, 0, 0, 500, 0);
             drawText(ctx, `${senderaccount}`, 168.0, 562.0, '31.5px DX-Krungthai', '#586970', '500', 'left', 1.5, 1, 0, 0, 500, -1);
             
-            drawText(ctx, `${receivername}`, 168.0, 708.7, '42.3px DX-Krungthai', '#000000', '600', 'left', 1.5, 3, 0, 0, 500, 0);
+            drawText(ctx, `${receivername}`, 168.0, 708.7, '42.3px DX-Krungthai', '#000000', '600', 'left', 1.5, 3, 0, 0, 800, 0);
             drawText(ctx, `${bank}`, 168.0, 759.3, '31.35px DX-Krungthai', '#000000', '700', 'left', 1.5, 2, 0, 0, 500, 0);
             drawText(ctx, `${receiveraccount}`, 168.0, 806.7, '31.5px DX-Krungthai', '#586970','500', 'left', 1.5, 1, 0, 0, 500, -1);
             
@@ -131,7 +131,7 @@ function updateDisplay() {
             drawText(ctx, `${QRCode}`, 238.9, 599.0, '33px DX-Krungthai', '#4e4e4e', '500', 'left', 1.5, 5, 0, 0, 500, 0);
             drawImage(ctx, 'https://github.com/useronlineid/Theslipcame/blob/main/KTB3.png?raw=true', 28.2, 365, 110, 110);  
         
-            drawText(ctx, `${AideMemoire}`, 26.0, 1108.7, '37.50px DX-Krungthai', '#000000', '500', 'right', 1.5, 1, 0, 0, 500, -1.5);
+            drawText(ctx, `${AideMemoire}`, 26.0, 1108.7, '37.50px DX-Krungthai', '#000000', '500', 'right', 1.5, 1, 0, 0, 800, -1.5);
             
             
         
