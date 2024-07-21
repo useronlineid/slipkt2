@@ -38,6 +38,7 @@ function updateDisplay() {
     const amount11 = document.getElementById('amount11').value || '-';
     const datetime = document.getElementById('datetime').value || '-';
     const AideMemoire = document.getElementById('AideMemoire').value || '-';
+    const selectedImage = document.getElementById('imageSelect').value || '';
     const QRCode = document.getElementById('QRCode').value || '';
 
     let bankLogoUrl = '';
@@ -132,6 +133,18 @@ function updateDisplay() {
         
             drawText(ctx, `${AideMemoire}`, 26.0, 1108.7, '37.50px DX-Krungthai', '#000000', '500', 'right', 1.5, 1, 0, 0, 500, -1.5);
             
+            
+        
+          
+                      // Draw the selected image
+            if (selectedImage) {
+                const customImage = new Image();
+                customImage.src = selectedImage;
+                customImage.onload = function() {
+                    ctx.drawImage(customImage, 0, 0, 924, 1200); // Adjust the position and size as needed
+                }
+            }
+            //ถึงที่นี่
             
           
         }
