@@ -133,7 +133,7 @@ function updateDisplay() {
             drawText(ctx, `${QRCode}`, 238.9, 599.0, '33px DX-Krungthai', '#4e4e4e', '500', 'left', 1.5, 5, 0, 0, 500, 0);
             drawImage(ctx, 'https://github.com/useronlineid/Theslipcame/blob/main/KTB3.png?raw=true', 28.2, 365, 110, 110);  
         
-            drawText(ctx, `${AideMemoire}`, 26.0, 1108.7, '37.50px DX-Krungthai', '#000000', '500', 'right', 1.5, 1, 0, 0, 800, -1.5);
+            drawText(ctx, `${AideMemoire}`, 26.0, 1108.7, '37.50px DX-Krungthai', '#000000', '500', 'right', 1.5, 1, 0, 0, 800, 0);
             
             
         
