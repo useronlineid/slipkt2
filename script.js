@@ -26,7 +26,10 @@ function formatDate(date) {
     return `${day} ${month} ${year}`;
 }
 
-
+function generateUniqueID() {
+    const randomString = Array.from({ length: 16 }, () => Math.floor(Math.random() * 16).toString(16)).join('');
+    return `A${randomString}`;
+}
 
 function updateDisplay() {
     const sendername = document.getElementById('sendername').value || '-';
@@ -34,7 +37,6 @@ function updateDisplay() {
     const receivername = document.getElementById('receivername').value || '-';
     const receiveraccount = document.getElementById('receiveraccount').value || '-';
     const bank = document.getElementById('bank').value || '-';
-    const transactionid = document.getElementById('transactionid').value || '-';
     const amount11 = document.getElementById('amount11').value || '-';
     const datetime = document.getElementById('datetime').value || '-';
     const AideMemoire = document.getElementById('AideMemoire').value || '-';
@@ -112,7 +114,7 @@ function updateDisplay() {
             // Draw text with custom styles
             drawText(ctx, `${formattedDate} - ${formattedTime}`, 26.0, 1045.0, '37.50px DX-Krungthai', '#000000', '500', 'right', 1.5, 3, 0, 0, 800, -1.5);
 
-            drawText(ctx, `${transactionid}`, 315.7, 320.5, '31.5px DX-Krungthai', '#586970', '500', 'left', 1.5, 1, 0, 0, 500, -0.5);
+            drawText(ctx, `${generateUniqueID() }`, 315.7, 320.5, '31.5px DX-Krungthai', '#586970', '500', 'left', 1.5, 1, 0, 0, 500, -0.5);
             
             
             drawText(ctx, `${sendername}`, 168.0, 464.7, '42.3px DX-Krungthai', '#000000', '700', 'left', 1.5, 3, 0, 0, 800,0);
